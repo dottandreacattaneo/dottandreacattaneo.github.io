@@ -18,60 +18,145 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #f7f7f5;
-            color: #252525;
+            padding: 40px 20px;
+
+            background:
+                radial-gradient(circle at top left, #e5eee9 0%, transparent 45%),
+                radial-gradient(circle at bottom right, #e9eee9 0%, transparent 45%),
+                #f5f7f5;
+
+            color: #26332f;
             font-family: Arial, Helvetica, sans-serif;
         }
 
         .container {
-            width: 90%;
-            max-width: 600px;
-            padding: 60px 30px;
+            width: 100%;
+            max-width: 650px;
+            padding: 55px 45px;
+
+            background: rgba(255, 255, 255, 0.94);
+            border: 1px solid #dde5e1;
+            border-radius: 14px;
+
             text-align: center;
-            background: white;
-            border: 1px solid #e5e5e5;
+
+            box-shadow:
+                0 12px 40px rgba(38, 51, 47, 0.08);
         }
 
         h1 {
-            margin: 0 0 10px;
-            font-size: 2.2rem;
+            margin: 0 0 8px;
+
+            font-size: 2.3rem;
             font-weight: 500;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.6px;
         }
 
         .profession {
-            margin: 0 0 35px;
-            font-size: 1.05rem;
-            color: #666;
+            margin: 0 0 30px;
+
+            font-size: 1.08rem;
+            color: #61736c;
         }
 
-        .location {
-            margin-bottom: 30px;
-            line-height: 1.6;
+        .intro {
+            max-width: 540px;
+            margin: 0 auto 30px;
+
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #465650;
+        }
+
+        .intro strong {
+            color: #30433b;
+            font-weight: 600;
+        }
+
+        .service {
+            margin: 30px auto;
+            padding: 24px 25px;
+
+            background: #f1f5f2;
+            border-radius: 10px;
+
+            line-height: 1.65;
+            color: #405149;
+        }
+
+        .service strong {
+            display: block;
+            margin-bottom: 8px;
+
+            font-size: 1.05rem;
+            color: #30433b;
         }
 
         .contacts {
             display: flex;
             flex-direction: column;
-            gap: 12px;
             align-items: center;
+            gap: 14px;
+
+            margin-top: 30px;
         }
 
-        a {
-            color: #252525;
+        .contacts a {
+            color: #304d41;
             text-decoration: none;
-            border-bottom: 1px solid #bbb;
-            padding-bottom: 2px;
+
+            border-bottom: 1px solid #aabdb4;
+            padding-bottom: 3px;
+
+            transition: border-color 0.2s ease;
         }
 
-        a:hover {
-            border-bottom-color: #252525;
+        .contacts a:hover {
+            border-bottom-color: #304d41;
+        }
+
+        .location {
+            margin-top: 32px;
+
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #61736c;
+        }
+
+        .registration {
+            margin-top: 35px;
+            padding-top: 25px;
+
+            border-top: 1px solid #e1e7e4;
+
+            font-size: 0.78rem;
+            line-height: 1.6;
+            color: #89958f;
         }
 
         footer {
-            margin-top: 50px;
-            font-size: 0.8rem;
-            color: #999;
+            margin-top: 25px;
+
+            font-size: 0.75rem;
+            color: #a0aaa5;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 14px;
+            }
+
+            .container {
+                padding: 40px 24px;
+            }
+
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            .intro {
+                font-size: 0.95rem;
+            }
         }
     </style>
 </head>
@@ -86,22 +171,57 @@
             Biologo Nutrizionista
         </p>
 
-        <div class="location">
-            Via Po, 14<br>
-            Torino
+
+        <p class="intro">
+            Offro una <strong>prima visita conoscitiva online gratuita e senza impegno</strong>,
+            per aiutarti a migliorare la forma fisica, gestire patologie o intolleranze
+            oppure semplicemente fare chiarezza sul mondo dell'alimentazione.
+        </p>
+
+
+        <div class="service">
+
+            <strong>Un percorso personalizzato</strong>
+
+            Se deciderai di iniziare il percorso, riceverai un piano
+            costruito sulle tue esigenze e preferenze, follow-up periodici
+            per monitorare i progressi e analisi della composizione corporea.
+
         </div>
 
+
         <div class="contacts">
+
+            <a href="https://wa.me/393331234567"
+               target="_blank"
+               rel="noopener">
+                Prenota la prima visita su WhatsApp →
+            </a>
 
             <a href="mailto:dott.andreacattaneo@proton.me">
                 dott.andreacattaneo@proton.me
             </a>
 
-            <a href="https://wa.me/393514284104" target="_blank" rel="noopener">
-                Contattami su WhatsApp →
-            </a>
+        </div>
+
+
+        <div class="location">
+
+            Ricevo a <strong>Torino</strong>, presso<br>
+            <strong>Farmacia Università Giorda</strong>
 
         </div>
+
+
+        <div class="registration">
+
+            Iscritto all'Ordine dei Biologi del Piemonte,
+            della Liguria e della Valle d'Aosta<br>
+
+            Numero di iscrizione: <strong>4423</strong>
+
+        </div>
+
 
         <footer>
             © 2026 Andrea Cattaneo · Biologo Nutrizionista
