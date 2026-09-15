@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dottandreacattaneo.github.io/sitemap.xml
